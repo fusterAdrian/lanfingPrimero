@@ -2,3 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.list li a{
+    text-decoration: none;
+    color: black;
+}

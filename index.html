@@ -5,17 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trenzatress</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="js/navigation.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/navigation.js" defer></script>
+    <!-- libreria que vamos a utililzar para los alerts es Sweet alert --> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <header>
         <a href="index.html"><img class="logo" src="media/img/logo.jpg" alt="Logo Landing page"></a>
-        <nav>
-            <ul>
+        <nav class="navigation">
+            <ul class="list">
                 <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <section>
+        <div class="heroe">
+            <div class="heroeText">
+                <h1 class="heoreTextTitle">Cordelería de alta calidad</h1>
+                <h2>Especializados en el trenzado para decoración y especializada en la fabricación y distribución de cordones para rieles extensibles de cortinas.</h2>
+            </div>
+            <div class="heroeImg">
+                <img src="media/img/logo.jpg" alt="Imagen de una máquina de cordelería">
+            </div>
+            <div class="heroeButton">
+                <button>Ver Productos</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="cardCalidad">
+            <h1 class="cardTitle">Calidad</h1>
+            <p>La calidad en la fabricación y el servicio es para nosotros la mayor inversión y garantía de futuro. Y unos productos fabricados con materias primas de alta calidad, contrastada y garantizada que responden al deseo de los clientes más exigentes.</p>
+        </div>
+        <div class="cardCompromiso">
+            <h1 class="cardTitle">Calidad</h1>
+            <p>La calidad en la fabricación y el servicio es para nosotros la mayor inversión y garantía de futuro. Y unos productos fabricados con materias primas de alta calidad, contrastada y garantizada que responden al deseo de los clientes más exigentes.</p>
+        </div>
+        <div class="cardValores">
+            <h1 class="cardTitle">Calidad</h1>
+            <p>La calidad en la fabricación y el servicio es para nosotros la mayor inversión y garantía de futuro. Y unos productos fabricados con materias primas de alta calidad, contrastada y garantizada que responden al deseo de los clientes más exigentes.</p>
+        </div>
+    </section>
+
+    <button id="enviarCorreo" onclick="sendAlert()">
+        Hola!
+    </button>
+
+    <script>
+        function sendAlert(){
+            swal("Enviado!", "Tu mensaje ha sido enviado! En breve nos pondremos en contacto contigo", "success");
+        }
+    </script>
+
 </body>
 </html>
